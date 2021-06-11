@@ -21,6 +21,9 @@ class LED_CONTROLLER:
       self.LEDS.append(pwm)
       self.brightnesses.append(65025)
 
+  def setMode(self, mode):
+    self.mode = mode
+
   def shineOn(self):
     if self.mode == 0:
       self.__variableBrightness()
@@ -64,6 +67,4 @@ class LED_CONTROLLER:
     if (self.__krBrightness <= 0):
       self.__krIncriment = -self.__krIncriment
     self.__krBrightness = self.__krBrightness + self.__krIncriment
-
-  def setMode(self, mode):
-    self.mode = mode
+    

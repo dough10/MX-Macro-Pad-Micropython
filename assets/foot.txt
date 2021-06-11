@@ -1,0 +1,4 @@
+## install
+
+1. write files to pico board
+2. watch lights blink and keypresses register in pico console
