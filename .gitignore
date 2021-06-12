@@ -1,2 +1,7 @@
 /.vscode/
 /node_modules/
+/der/
+/modules/
+make-docs.js
+make-docs-doc.md
+push.sh
