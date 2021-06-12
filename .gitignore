@@ -2,6 +2,9 @@
 /node_modules/
 /der/
 /modules/
+/assets/
 make-docs.js
 make-docs-doc.md
 push.sh
+package.json
+package-lock.json
