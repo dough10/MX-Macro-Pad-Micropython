@@ -22,7 +22,6 @@ class Button:
       except IndexError:
         pass
     # encoder button does not have LED tied to it toggles led mode 
-    # if self.index > len(self.LEDS.LEDS):
     try:  
       self.LEDS.LEDS[self.index] ## checking if there is a led tied to the button index (ie. is it the encoder button)
       if self.__function_state[0]:
@@ -35,6 +34,9 @@ class Button:
     except IndexError:
       self.__function_state[0] = state
       return
+
+  def isPressed(self):
+    return self.__pressed
 
   def update(self):
     self.__press(not self.pin.value())

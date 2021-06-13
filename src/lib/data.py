@@ -1,7 +1,13 @@
 from machine import UART
 
-class data:
-  def __init__(self):
+class DATA:
+  def __init__(self, leds, buttons, knob):
     self.uart = UART(1, 9600)
-
+    self.leds = leds
+    self.buttons = buttons.buttons
     print('data init')
+
+  def process(self):
+    for button in self.buttons:
+      if button.isPressed():
+        print(button.index)
