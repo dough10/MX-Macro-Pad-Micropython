@@ -2,7 +2,6 @@ from machine import UART
 
 class DATA:
   def __init__(self, leds, buttons, knob):
-    self.uart = UART(1, 9600)
     self.leds = leds
     self.buttons = buttons.buttons
     print('data init')
