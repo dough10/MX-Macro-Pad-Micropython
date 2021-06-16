@@ -29,7 +29,7 @@ class Button:
         self.LEDS.mode = self.index
         return
       ## actual key press command here
-      print("Button: ", self.pin, ", LED: ", self.LEDS.LEDS[self.index], ", Key: " + self.key + " Pressed") if state else print("Button: ", self.pin, ", LED: ", self.LEDS.LEDS[self.index], ", Key: " + self.key +  " Released")
+      print("Button: ", self.pin, ", LED: ", self.LEDS.LEDS[self.index], ", Key: " + self.key + ", Pressed") if state else print("Button: ", self.pin, ", LED: ", self.LEDS.LEDS[self.index], ", Key: " + self.key +  ", Released")
       print('')
       ##
     except IndexError:
