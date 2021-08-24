@@ -4,9 +4,6 @@ rewrite of [MX-Macro-Pad](https://github.com/dough10/MX-Macro-Pad) for Arduino A
 
 micropython doesn't currently have support for usb-hid on pi pico board atm. this project is bassicly boiler plate for when it is working.
 
-## Documentation
-
-
 ## install
 
 1. write files from src folder to your pico board
